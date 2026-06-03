@@ -1,1 +1,2 @@
-# myrc
+# myrc - RC files
+
