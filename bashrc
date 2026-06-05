@@ -1,12 +1,16 @@
-alias ls='ls -lh --color=auto'
+# changing ls for personal use
+alias ls='ls -hlt --color=auto'
 
+# for file/directory size
+alias dirSize='du -sh'
 
-alias peta_2023_2='source /DATA/Xilinx/PetaLinux/2024.1/tool/settings.sh'
-alias vivado_2023_2='source /DATA/Xilinx/Vivado/2023.2/settings64.sh'
-alias vivado_2017_2='source /DATA/Xilinx/Vivado/2017.4/settings64.sh'
+# for copying file content to clipboard
+alias clipFile='xclip -sel clip'
 
-alias cpP='rsync -avh --progress'
+# for copy with progress using rsync
+alias cpP='rsync -ah --progress'
+
+alias diff="diff --color=auto"
 
 function cpath() { realpath "${1:-.}" | xclip -selection clipboard; }
-
 
